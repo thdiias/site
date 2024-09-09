@@ -1,0 +1,41 @@
+body {
+    background-image: url('Eduardo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    height: auto; 
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    background-size: contain;
+    background-size: cover; 
+}
+body {
+    height: 100%; /* Garante que o body ocupe a altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f0f0f0; /* Cor de fundo opcional */
+}
+
+.container {
+    width: 80%; /* Largura do contêiner */
+    max-width: 1000px; /* Largura máxima do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f5eeee91; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas opcionais */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
